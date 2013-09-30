@@ -1,0 +1,72 @@
+/* 
+    Document   : bemVindo
+    Created on : 22/09/2013, 22:35:04
+    Author     : brandes
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.fontNormal {
+    color:#fff;
+}
+
+p {
+    color:#fff;
+}
+
+.loginName {
+    color:#7E9F59;
+}
+
+.page-header {
+    color:#fff;
+}
+
+.logoColor {
+    color:#7E9F59;
+}
+
+.icon-user,.icon-list {
+    color:#fff;
+}
+
+.span4 i {
+    text-align: center;
+}
+
+.icon-desktop, .icon-group,.icon-truck,.icon-print{
+        color:#fff;
+        font-size: 150px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+}
+
+.titIcon{
+    text-align: center;
+    width: 160px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.iconsMenu {
+    padding-left:20px;
+}
+
+.iconsMenu a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.iconsMenu a:hover .icon-group,.iconsMenu a:hover .icon-print, .iconsMenu a:hover .icon-desktop,.iconsMenu a:hover .icon-truck{
+    text-decoration: none;
+    color: #7E9F59;
+}
+
+.content {
+    padding:60px 0;
+}
+
+.rodape {
+    font-size: 20px;
+}

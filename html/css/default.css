@@ -1,0 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+root { 
+    display: block;
+}
+
+.clear {
+    clear:both;
+}
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 13px;
+    background: url('/html/img/bgsite.jpg') repeat center center;
+}
+
+.container {
+    max-width: 980px;
+    padding-top: 20px;
+}
