@@ -27,7 +27,7 @@
           <div class="span4">
               <p class="fontNormal">Bem vindo <span class="loginName">Eduardo Brandes</span></p>
               <p class="fontNormal"><?php
-                    $datestring = "Year: %d / %m  / %Y  - %h:%i %a";
+                    $datestring = "Data: %d / %m  / %Y  - %h:%i %a";
                     $time = time();
                     echo mdate($datestring, $time);
                 ?>
