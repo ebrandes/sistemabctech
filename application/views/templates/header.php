@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="<?php echo base_url()?>/html/css/bootstrap.css" />
-        <link rel="stylesheet" href="<?php echo base_url()?>/html/css/bootstrap-responsive.css" />
+        <link rel="stylesheet" href="/html/css/bootstrap.css"  type="text/css" />
+        <link rel="stylesheet" href="/html/css/bootstrap-responsive.css" type="text/css"  />
         
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         
-        <script src="<?php echo base_url()?>/html/js/jquery.js"></script>
-        <script src="<?php echo base_url()?>/html/js/bootstrap.js"></script>
-         <link rel="stylesheet" href="<?php echo base_url()?>/html/css/default.css" />
+        <script src="/html/js/jquery.js" type="text/javascript"></script>
+        <script src="/html/js/dataTables.js" type="text/javascript"></script>
+        <script src="/html/js/global.js" type="text/javascript"></script>
+        <script src="/html/js/bootstrap.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="<?php echo base_url()?>/html/css/default.css" type="text/css" />
 	<title>Ben vindo lo ao Sistema do BC Tech</title>
                 <?php loadScript::loadScripts($css,$js); ?>
 </head>
@@ -20,7 +22,7 @@
       
             <div class="row-fluid">
           <div class="span8">
-              <img src="html/img/logo.png" alt="logo_bctech" title="BCTECH" />
+              <img src="/html/img/logo.png" alt="logo_bctech" title="BCTECH" />
           </div>
           <div class="span4">
               <p class="fontNormal">Bem vindo <span class="loginName">Eduardo Brandes</span></p>

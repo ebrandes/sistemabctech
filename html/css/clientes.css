@@ -1,0 +1,16 @@
+/* 
+    Document   : clientes
+    Created on : 02/10/2013, 00:37:17
+    Author     : brandes
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.lista_clientes label, table th {
+    color:#FFF;
+    text-align: left;
+}
