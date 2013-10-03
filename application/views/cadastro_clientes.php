@@ -52,3 +52,9 @@
         <input type="text" name="cpf" id="cpf" />
     </div>
 </div>
+
+<div class="row-fluid marty">
+    <div class="span12">
+        <button type="submit" class="btn">Salvar</button>
+    </div>
+</div>
