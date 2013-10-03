@@ -18,6 +18,17 @@ class Clientes extends CI_Controller {
         $this->load->view('templates/footer');
     }
     
+    public function cadastro(){
+        
+        $data['css'] = array('clientes.css','bemVindo.css');
+        $data['js'] = "";
+        
+        $this->load->view('templates/header',$data);
+        $this->load->view('cadastro_clientes');
+        $this->load->view('templates/footer');
+        
+    }
+    
 }
 
 
