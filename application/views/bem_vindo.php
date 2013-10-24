@@ -10,7 +10,7 @@
       
       <div class="row-fluid content">
           <div class="span3 iconsMenu">
-              <a href="#">   
+              <a href="/clientes/cadastro">   
                 <i class="icon-group"></i>
                 <p class="titIcon">Novo cliente</p>
               </a>
@@ -28,9 +28,9 @@
               </a>
           </div>          
           <div class="span3 iconsMenu">
-             <a href="#">   
+             <a href="/ordemserv">   
                     <i class="icon-print"></i>
-                    <p class="titIcon">Novo orçamento</p>
+                    <p class="titIcon">Nova ordem de serv.</p>
               </a>    
           </div>          
       </div>

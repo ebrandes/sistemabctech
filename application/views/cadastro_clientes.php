@@ -1,5 +1,6 @@
+<form id="frmCadastroUsuario" method="post" action="/clientes/salvar">
+
 <div class="row-fluid">
-    
     <div class="span4">
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" class="input-xlarge" />
@@ -13,6 +14,12 @@
         <input type="text" id="celular" name="celular" class="input-medium" />
     </div>
 </div>
+    
+       <div class="span12 noMargin">
+        <label for="nome">Email</label>
+        <input type="text" id="email" name="email" class="input-xlarge" />
+    </div> 
+    
 <div class="row-fluid">
     <div class="span7">
         <label for="endereco">Endereço</label>
@@ -36,12 +43,12 @@
 <div class="row-fluid">
     <div class="span12">
         <label for="bairro">Bairro</label>
-        <select class="form-control">
-            <option>Tristeza</option>
-            <option>Ipanema</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+        <select class="form-control" name="bairro">
+            <option value="Tristeza">Tristeza</option>
+            <option value="Ipanema">Ipanema</option>
+            <option value="Ipanema">3</option>
+            <option value="Ipanema">4</option>
+            <option value="Ipanema">5</option>
         </select>
     </div>
 </div>
@@ -58,3 +65,5 @@
         <button type="submit" class="btn">Salvar</button>
     </div>
 </div>
+    
+</form>

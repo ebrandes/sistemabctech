@@ -22,7 +22,7 @@
       
             <div class="row-fluid">
           <div class="span8">
-              <img src="/html/img/logo.png" alt="logo_bctech" title="BCTECH" />
+              <a href="/welcome"><img src="/html/img/logo.png" alt="logo_bctech" title="BCTECH" /></a> 
           </div>
           <div class="span4">
               <p class="fontNormal">Bem vindo <span class="loginName">Eduardo Brandes</span></p>
@@ -38,7 +38,7 @@
       
        <div class="navbar">
           <div class="navbar-inner">
-              <a href="#" class="brand">Navegação</a>
+              <a href="/welcome" class="brand">Home</a>
               <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                   <span class="icon-th-list"></span>
               </a>
@@ -47,8 +47,8 @@
                       <li class="active dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Clientes <b class="caret"></b></a>
                        <ul class="dropdown-menu">
-                            <li><a href="#">Novo cliente</a></li>
-                            <li><a href="#">Lista de clientes</a></li>
+                            <li><a href="/clientes/cadastro">Novo cliente</a></li>
+                            <li><a href="/clientes">Lista de clientes</a></li>
                         </ul>
                       </li>
                        <li class="dropdown">
