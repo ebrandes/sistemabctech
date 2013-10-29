@@ -34,7 +34,7 @@ class Clientes extends CI_Controller {
         $row = $this->clientes_model->lista();
         
         $data['css'] = array ('bemVindo.css','clientes.css','jquery.dataTables_themeroller.css','jquery.dataTables.css');
-        $data['js'] = "";
+        $data['js'] = array('clientes.js');
         $data["lista"] = $row;
         $this->load->view('templates/header',$data);
         $this->load->view('lista_clientes');
@@ -47,16 +47,21 @@ class Clientes extends CI_Controller {
         
         $bairro = $this->input->post("bairro");
         $nome = $this->input->post("nome");
+        $email = $this->input->post("email");
         $celular = $this->input->post("celular");
         $complemento = $this->input->post("complemento");
         $cpf = $this->input->post("cpf") ;
         $telefone = $this->input->post("telefone");
         $numeroComplemento = $this->input->post("numero");
+        $cep = $this->input->post("cep");
         $endereco = $this->input->post("endereco");
+        
         
         
         $this->clientes_model->setBairro($bairro);
         $this->clientes_model->setNome($nome);
+        $this->clientes_model->setEmail($email);
+        $this->clientes_model->setCEP($cep);
         $this->clientes_model->setCelular($celular);
         $this->clientes_model->setComplemento($complemento);
         $this->clientes_model->setCpf($cpf);

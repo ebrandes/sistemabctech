@@ -6,15 +6,14 @@ class Welcome extends CI_Controller {
         parent::__construct();
         $this->load->helper('date');
         $this->load->helper('url');
-        $this->load->library('loadScript');
     }
 
     public function index()
 	{
-                            $data['css'] = "bemVindo.css";
-                            $data['js'] = "bemVindo.js";
+                $data['js'] = "";
+                $data['css'] = "bemVindo.css";
                             $this->load->view('templates/header',$data);
-		$this->load->view('bem_vindo');
+		                    $this->load->view('bem_vindo');
                              $this->load->view('templates/footer');
 	}
         

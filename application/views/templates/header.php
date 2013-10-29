@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><?php date_default_timezone_set('America/Sao_Paulo'); ?>
         <meta charset="utf-8">
         <link rel="stylesheet" href="/html/css/bootstrap.css"  type="text/css" />
         <link rel="stylesheet" href="/html/css/bootstrap-responsive.css" type="text/css"  />

@@ -15,10 +15,17 @@
     </div>
 </div>
     
-       <div class="span12 noMargin">
+    <div class="span12" style="margin-left:0px !important">
         <label for="nome">Email</label>
         <input type="text" id="email" name="email" class="input-xlarge" />
     </div> 
+    
+    <div class="span12" style="margin-left:0px !important">
+        <label for="nome">CEP</label>
+        <input type="text" id="cep" name="cep" class="input-medium" />
+    </div> 
+    
+    
     
 <div class="row-fluid">
     <div class="span7">

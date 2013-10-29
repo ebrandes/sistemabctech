@@ -3,6 +3,8 @@
 class Clientes_model extends CI_Model {
     
      private $nome,$telefone,$celular,$endereco,$complemento,$numeroComplemento,$bairro,$cpf;
+     private $cep,$email;
+    
     
      public function __construct() {
          parent::__construct();
@@ -21,10 +23,12 @@ class Clientes_model extends CI_Model {
             'endereco' => $this->getEndereco(),
             'numero' => $this->getNumeroComplemento(),
             'complemento' => $this->getComplemento(),
-            'cpf' => $this->getCpf()
+            'cpf' => $this->getCpf(),
+            'email' => $this->getEmail(),
+            'cep' => $this->getCep()
         );
 
-         $this->db->insert('Clientes', $data); 
+         $this->db->insert('Cliente', $data); 
          
          if(!$this->db->_error_message()){
              $msg = "Registro cadastrado com sucesso.";
@@ -39,7 +43,7 @@ class Clientes_model extends CI_Model {
      
      public function lista(){
          
-         $query = $this->db->get('Clientes');
+         $query = $this->db->get('Cliente');
          return $query->result_array();
      }
      
@@ -107,6 +111,20 @@ class Clientes_model extends CI_Model {
 
     public function setCpf($cpf) {
         $this->cpf = $cpf;
+    }
+    
+    public function setEmail($email){
+        $this->email = $email;
+    }
+    public function setCEP($cep) {
+        $this->cep = $cep;
+    }
+    
+    public function getCep(){
+        return $this->cep;
+    }
+    public function getEmail(){
+        return $this->email;
     }
     
     

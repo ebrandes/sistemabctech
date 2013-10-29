@@ -1,6 +1,6 @@
 <?php
 
-Class loadScript {
+Class LoadScript {
 
     public static function loadScripts($css = null, $js = null) {
 

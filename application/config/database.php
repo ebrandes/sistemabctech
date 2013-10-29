@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'sistemabctech';
+$db['default']['hostname'] = 'mysql01-farm53.uni5.net';
+$db['default']['username'] = 'bctech';
+$db['default']['password'] = 'brandes01';
+$db['default']['database'] = 'bctech';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

@@ -22,3 +22,7 @@ label {
 .marty {
     margin-top: 15px;
 }
+
+.dataTables_info {
+    color:#FFF !important;
+}
