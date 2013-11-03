@@ -12,8 +12,8 @@
         <script src="/html/js/dataTables.js" type="text/javascript"></script>
         <script src="/html/js/global.js" type="text/javascript"></script>
         <script src="/html/js/bootstrap.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="<?php echo base_url()?>/html/css/default.css" type="text/css" />
-	<title>Ben vindo lo ao Sistema do BC Tech</title>
+        <link rel="stylesheet" href="/html/css/default.css" type="text/css" />
+	<title>Bem vindo ao Sistema BCTech</title>
                 <?php loadScript::loadScripts($css,$js); ?>
 </head>
 <body>

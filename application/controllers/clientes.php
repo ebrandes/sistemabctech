@@ -34,7 +34,7 @@ class Clientes extends CI_Controller {
         $row = $this->clientes_model->lista();
         
         $data['css'] = array ('bemVindo.css','clientes.css','jquery.dataTables_themeroller.css','jquery.dataTables.css');
-        $data['js'] = array('clientes.js');
+        $data['js'] = array('clientes.js','jquery.dataTables.min.js');
         $data["lista"] = $row;
         $this->load->view('templates/header',$data);
         $this->load->view('lista_clientes');

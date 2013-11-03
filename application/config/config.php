@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'https://sistemabctech-c9-ebrandes.c9.io/';
+$config['base_url']	= 'sistemabctech';
 
 /*
 |--------------------------------------------------------------------------
