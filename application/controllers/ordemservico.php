@@ -20,8 +20,14 @@ class OrdemServico extends CI_Controller {
         
     }
     
-    public function cadastrar(){
+    public function cadastro(){
         
+        $data['css'] = array ('bemVindo.css','ordemServico.css','jquery.dataTables_themeroller.css','jquery.dataTables.css');
+        $data['js'] = array('clientes.js','jquery.dataTables.min.js');
+        
+        $this->load->view("templates/header",$data);
+        $this->load->view("cadastro_ordemServicos");
+        $this->load->view("templates/footer");
     }
     
     public function salvar(){

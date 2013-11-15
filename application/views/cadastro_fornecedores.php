@@ -1,4 +1,4 @@
-<form id="frmCadastroUsuario" method="post" action="/fornecedores/salvar">
+<form id="frmCadastroFornecedores" method="post" action="/fornecedores/salvar">
 
 <div class="row-fluid">
     <div class="span12">
