@@ -54,8 +54,8 @@
                        <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fornecedores <b class="caret"></b></a>
                           <ul class="dropdown-menu">
-                            <li><a href="#">Novo fornecedor</a></li>
-                            <li><a href="#">Lista de fornecedores</a></li>
+                            <li><a href="/fornecedores/cadastro">Novo fornecedor</a></li>
+                            <li><a href="/fornecedores/">Lista de fornecedores</a></li>
                         </ul>
                       </li>
                       <li class='dropdown'>

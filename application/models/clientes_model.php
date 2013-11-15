@@ -17,18 +17,17 @@ class Clientes_model extends CI_Model {
 
         $data = array(
             'nome' => $this->getNome(),
+            'email' => $this->getEmail(),
+            'cep' => $this->getCep(),
+            'endereco' => $this->getEndereco(),
+            'complemento' => $this->getComplemento(),
+            'numero' => $this->getNumeroComplemento(),
             'bairro' => $this->getBairro(),
             'telefone' => $this->getTelefone(),
-            'celular' => $this->getCelular(),
-            'endereco' => $this->getEndereco(),
-            'numero' => $this->getNumeroComplemento(),
-            'complemento' => $this->getComplemento(),
-            'cpf' => $this->getCpf(),
-            'email' => $this->getEmail(),
-            'cep' => $this->getCep()
+            'celular' => $this->getCelular()
         );
 
-         $this->db->insert('Cliente', $data); 
+         $this->db->insert('tb_clientes', $data); 
          
          if(!$this->db->_error_message()){
              $msg = "Registro cadastrado com sucesso.";
@@ -42,8 +41,7 @@ class Clientes_model extends CI_Model {
      }
      
      public function lista(){
-         
-         $query = $this->db->get('Cliente');
+         $query = $this->db->get('tb_clientes');
          return $query->result_array();
      }
      
