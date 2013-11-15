@@ -8,6 +8,29 @@ class fornecedores_model extends CI_Model {
        $this->load->database();
    }
    
+   public function salvar() {
+           $data = array(
+            'nome' => $this->getNome(),
+            'email' => $this->getEmail(),
+            'cep' => $this->getCep(),
+            'endereco' => $this->getEndereco(),
+            'bairro' => $this->getBairro(),
+            'telefone1' => $this->getTelefone1(),
+            'telefone2' => $this->getTelefone2()
+        );
+          
+         $this->db->insert('tb_fornecedores', $data);
+         
+         if(!$this->db->_error_message()){
+             $msg = "Registro cadastrado com sucesso.";
+         } else {
+             $msg = "Não foi possivel incluir o registro";
+         }
+         
+         return $msg;
+         
+   }
+   
    public function lista(){
        $query = $this->db->get("tb_fornecedores");
        return $query->result_array();

@@ -20,8 +20,26 @@ class fornecedores extends CI_Controller {
 
  public function salvar() {
      
-     $this->fornecedores_model->salvar();
-     
+    $nome = $this->input->post("nome");
+    $email = $this->input->post("email");
+    $telefone1 = $this->input->post("telefone1");
+    $telefone2 = $this->input->post("telefone2") ;
+    $cep = $this->input->post("cep");
+    $endereco = $this->input->post("endereco");
+    $bairro = $this->input->post("bairro");
+   
+    $this->fornecedores_model->setNome($nome).
+    $this->fornecedores_model->setEmail($email);
+    $this->fornecedores_model->setTelefone1($telefone1);
+    $this->fornecedores_model->setTelefone2($telefone2);
+    $this->fornecedores_model->setEndereco($endereco);
+    $this->fornecedores_model->setBairro($bairro);
+    
+    $retorno = $this->fornecedores_model->salvar();
+    $this->messages->add($retorno,"success");
+    
+    header('Location: /fornecedores');
+    
  }
  
  public function cadastro() {
