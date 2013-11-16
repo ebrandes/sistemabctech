@@ -77,6 +77,15 @@ class Clientes extends CI_Controller {
         
     }
     
+    
+    public function listaClientesAutoComplete(){
+        
+        $retorno = $this->clientes_model->listaClientesAutoComplete();
+        echo json_encode($retorno);
+        
+    }
+    
+    
 }
 
 

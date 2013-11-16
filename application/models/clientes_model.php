@@ -46,6 +46,13 @@ class Clientes_model extends CI_Model {
      }
      
      
+     public function listaClientesAutoComplete(){
+         
+         $query = $this->db->get('tb_clientes');
+         return $query->result_array();
+         
+     }
+     
      
      public function getNome() {
         return $this->nome;

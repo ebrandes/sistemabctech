@@ -33,15 +33,28 @@
 </div>
 
 <div class="row-fluid">
-    <div class="span12">
-        <label for="cpf">CPF</label>
-        <input type="text" name="cpf" id="cpf" />
+    <div class="span2">
+        <label for="ind_desconto">Desconto</label>
+        <label class="checkbox"> <input type="checkbox" name="ind_desconto" value="1" > Promoção </label>
     </div>
+    <div class="span3">
+        <label for="valor_desconto">Valor de desconto</label>
+        <input type="text" name="valor_desconto" id="valor_desconto" class="input-medium" />
+    </div>
+    <div class="span3">
+        <label for="valor_frete">Valor de Frete</label>
+        <input type="text" name="valor_frete" id="valor_frete" class="input-medium" />
+    </div>
+    <div class="span4">
+        <label for="valor_total">Valor Total</label>
+        <input type="text" name="valor_total" id="valor_total"  class="input-medium"/>
+    </div>
+        
 </div>
 
 <div class="row-fluid marty">
     <div class="span12">
-        <button type="submit" class="btn">Salvar</button>
+        <button type="submit" class="btn">Gerar Ordem</button>
     </div>
 </div>
     

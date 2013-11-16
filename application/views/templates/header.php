@@ -2,6 +2,9 @@
 <html lang="en">
 <head><?php date_default_timezone_set('America/Sao_Paulo'); ?>
         <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" href="/html/css/bootstrap.css"  type="text/css" />
         <link rel="stylesheet" href="/html/css/bootstrap-responsive.css" type="text/css"  />
         
