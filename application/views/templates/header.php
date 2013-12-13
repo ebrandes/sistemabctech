@@ -11,10 +11,13 @@
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         
+        
         <script src="/html/js/jquery.js" type="text/javascript"></script>
+        <script src="/html/js/jquery-ui.js" type="text/javascript"></script>
         <script src="/html/js/dataTables.js" type="text/javascript"></script>
         <script src="/html/js/global.js" type="text/javascript"></script>
         <script src="/html/js/bootstrap.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/html/css/jquery-ui.css" type="text/css" />
         <link rel="stylesheet" href="/html/css/default.css" type="text/css" />
 	<title>Bem vindo ao Sistema BCTech</title>
                 <?php loadScript::loadScripts($css,$js); ?>

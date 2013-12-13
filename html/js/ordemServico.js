@@ -1,17 +1,23 @@
+var arrayClientesNome = new Array();
+var arrayClientes = new Array();
 $(document).ready(function(){
-   arrayClientes = new Array();
    $.ajax({
        url:'/clientes/listaClientesAutoComplete',
        type:'GET',
        success:function(data) {
            $(data).each(function(){
-            arrayClientes.push($(this));    
+             arrayClientes.push(this);
            });
-           
-            for(i=0;i<arrayClientes.length;i++) {
-                   console.log(arrayClientes[i].nome);
-            }
        },
        dataType:'json'
    });
+   
+    for(i=0;i<arrayClientes.length;i++)    {
+        arrayClientesNome.push(arrayClientes[i].nome);
+    }
+  
+   $("input[name='nome']").autocomplete(function(){
+            source: arrayClientesNome
+    });  
+        
 });
