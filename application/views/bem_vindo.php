@@ -22,7 +22,7 @@
               </a>
           </div>          
           <div class="span3 iconsMenu">
-             <a href="#">   
+             <a href="/fornecedores/cadastro">   
                     <i class="icon-truck"></i>
                     <p class="titIcon">Novo fornecedor</p>
               </a>

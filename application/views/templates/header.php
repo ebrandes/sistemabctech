@@ -27,8 +27,8 @@
   <div class="container">
       
             <div class="row-fluid">
-          <div class="span8">
-              <a href="/welcome"><img src="/html/img/logo.png" alt="logo_bctech" title="BCTECH" /></a> 
+          <div class="span8 fontLogo">
+              <a href="/welcome"><span class="bc">BC</span><span class="tech">tech</span></a> 
           </div>
           <div class="span4">
               <p class="fontNormal">Bem vindo <span class="loginName">Eduardo Brandes</span></p>

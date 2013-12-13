@@ -1,0 +1,86 @@
+/*
+SQLyog Ultimate v11.11 (64 bit)
+MySQL - 5.5.32 : Database - bctech
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`bctech` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `bctech`;
+
+/*Table structure for table `tb_categorias` */
+
+DROP TABLE IF EXISTS `tb_categorias`;
+
+CREATE TABLE `tb_categorias` (
+  `cod` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`cod`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+
+/*Data for the table `tb_categorias` */
+
+insert  into `tb_categorias`(`cod`,`nome`) values (1,'Periféricos'),(2,'Processador'),(3,'Memória ram'),(4,'Monitor'),(5,'Placa mãe'),(6,'Placa de Vídeo'),(7,'Placa de rede'),(8,'Placa de som'),(9,'Outros');
+
+/*Table structure for table `tb_clientes` */
+
+DROP TABLE IF EXISTS `tb_clientes`;
+
+CREATE TABLE `tb_clientes` (
+  `cod` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(200) DEFAULT NULL,
+  `endereco` varchar(200) DEFAULT NULL,
+  `complemento` varchar(200) DEFAULT NULL,
+  `numero` varchar(200) DEFAULT NULL,
+  `bairro` varchar(200) DEFAULT NULL,
+  `telefone` varchar(200) DEFAULT NULL,
+  `celular` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`cod`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `tb_clientes` */
+
+/*Table structure for table `tb_fornecedores` */
+
+DROP TABLE IF EXISTS `tb_fornecedores`;
+
+CREATE TABLE `tb_fornecedores` (
+  `cod` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(200) DEFAULT NULL,
+  `endereco` varchar(200) DEFAULT NULL,
+  `bairro` varchar(200) DEFAULT NULL,
+  `telefone1` varchar(200) DEFAULT NULL,
+  `telefone2` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`cod`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `tb_fornecedores` */
+
+/*Table structure for table `tb_produtos` */
+
+DROP TABLE IF EXISTS `tb_produtos`;
+
+CREATE TABLE `tb_produtos` (
+  `cod` int(11) NOT NULL AUTO_INCREMENT,
+  `fkcod_categoria` int(11) DEFAULT NULL,
+  `nome` varchar(200) DEFAULT NULL,
+  `descricao` varchar(200) DEFAULT NULL,
+  `imagem` varchar(200) DEFAULT NULL,
+  `valor` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`cod`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `tb_produtos` */
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

@@ -15,7 +15,7 @@ p {
 }
 
 .loginName {
-    color:#7E9F59;
+    color:#16a085;
 }
 
 .page-header {
@@ -23,7 +23,7 @@ p {
 }
 
 .logoColor {
-    color:#7E9F59;
+    color:#16a085;
 }
 
 .icon-user,.icon-list {
@@ -60,7 +60,7 @@ p {
 
 .iconsMenu a:hover .icon-group,.iconsMenu a:hover .icon-print, .iconsMenu a:hover .icon-desktop,.iconsMenu a:hover .icon-truck{
     text-decoration: none;
-    color: #7E9F59;
+    color: #16a085;
 }
 
 .content {

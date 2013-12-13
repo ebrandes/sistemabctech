@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
-
+ @import url(http://fonts.googleapis.com/css?family=Eagle+Lake);
+ 
 root { 
     display: block;
 }
@@ -11,10 +12,29 @@ root {
 body {
     font-family: 'Droid Sans', sans-serif;
     font-size: 13px;
-    background: url('/html/img/bgsite.jpg') repeat center center;
+    background: #34495e;
 }
 
 .container {
     max-width: 980px;
     padding-top: 20px;
+}
+
+.loginName {
+    color: #16a085 !important;
+}
+
+.fontLogo a {
+    font-family: 'Eagle Lake', cursive;
+    margin-top: 10px;
+    font-size: 500%;
+    color:#16a085 !important;
+}
+
+.fontLogo a:hover {
+    text-decoration: none;
+}
+
+label {
+    color:#FFF !important;
 }
